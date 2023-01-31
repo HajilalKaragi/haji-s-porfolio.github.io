@@ -2,15 +2,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&family=Source+Sans+Pro:ital,wght@1,300&display=swap');
 @media screen and (max-width: 720px) {
     /*changes reflects on screen with a width of 720px and below*/
+
+    *{
+      flex-direction: column;
+      width: 10rem;
+    } 
+    .nav {
+      position: sticky;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.5rem 3rem;
+      background-color: var(--bg-color);
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    }
+   
     .hero {
         margin-top: -4rem;
         flex-direction: column;
         gap: 0;
+        width: 30px;
       }
     
       .hero img {
-            height: 37.5rem;
-            width: 30rem;
+            height: 30.5rem;
+            width:100rem;
         }
     
       .bio {
@@ -41,6 +60,26 @@
 
   }
   @media screen and (max-width: 420px) {
+    .nav {
+      position: sticky;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.5rem 3rem;
+      background-color: var(--bg-color);
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    }
+
+
+    *{
+      flex-direction: column;
+      width: 10rem;
+    }
+    
+    
     .hero img {
       height: 37.5rem;
       width: 23rem;
@@ -49,13 +88,18 @@
     .bio {
       width: 18.3rem;
     }
-  
+    .projects{
+     flex-wrap: wrap;
+      width: 18.875rem;
+    }
     .project-container {
-      width: 17.875rem;
+      width: 18.875rem;
+      flex-direction: column;
     }
   
     .contact-form-container {
       max-width: 17.75rem;
+      flex-direction: column;
     }
   } 
 
@@ -360,13 +404,14 @@ nav {
     display: flex;
     flex-direction: column;
     position: fixed;
-    right: 1%;
-    bottom: 50%;
+    right: 0.5%;
+    bottom: 34%;
   }
   
   .socicon {
     width: 2.5rem;
     height: 2.5rem;
+    padding: auto;
   }
 
 
